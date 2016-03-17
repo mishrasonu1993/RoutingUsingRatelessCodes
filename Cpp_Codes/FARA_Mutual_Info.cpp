@@ -416,8 +416,8 @@ int main()
 }
 
 /*
-this function calculates the mean cost from nodes (including source) to the destination
-*/
+ * this function calculates the mean cost from nodes (including source) to the destination
+ */
 /*
 void cost2D_est(int source, int destination) 
 {
@@ -476,8 +476,8 @@ void cost2D_est(int source, int destination)
 */
 
 /*
-	this class is used for getting the rank of boolean matrices
-*/
+ * this class is used for getting the rank of boolean matrices
+ */
 class BooleanMatrix
 {
 	vector< vector<bool> > mat; //boolean matrix
@@ -551,8 +551,8 @@ class BooleanMatrix
 };
 
 /*
-  this functions checks if vect is lindearly independent of the cols of matrix
-*/
+ * this functions checks if vect is lindearly independent of the cols of matrix
+ */
 int linr_indep(bool matrix[npacks][npacks][no_nodes], bool vect[npacks], int f, int cols)
 {
 	int rank, li = 0; 
@@ -581,8 +581,8 @@ int linr_indep(bool matrix[npacks][npacks][no_nodes], bool vect[npacks], int f, 
 }
 
 /*
- this function estimates the additional number of retransmissions required on the link
- having erasure probability p to successfully receive all the npacks packets in the message
+ * this function estimates the additional number of retransmissions required on the link
+ * having erasure probability p to successfully receive all the npacks packets in the message
  */
 /*
 float addnl_Tx_est(int K, float p, int ntrans, float linccost)
@@ -616,7 +616,7 @@ float addnl_Tx_est(int K, float p, int ntrans, float linccost)
 */
 
 /*
- this function calculates the mean costs of the links
+ * this function calculates the mean costs of the links
  */
 /*
 void mean_link_cost_calc()
@@ -646,7 +646,7 @@ void mean_link_cost_calc()
  */
 
 /*
- this function calculates nCk
+ * this function calculates nCk
  */
 /*
 double nchoosek(int n, int k)
