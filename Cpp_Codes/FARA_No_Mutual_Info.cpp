@@ -269,9 +269,14 @@ int main()
                 {
                     sfwd = fwd;
                 }
-
-                if (fwd==1) {freq1++; cost1+=ntrans;}
-                if (fwd==2) {freq2++; cost2+=ntrans;}
+                if (fwd==1) 
+                {
+                    freq1++; cost1+=ntrans;
+                }
+                if (fwd==2) 
+                {
+                    freq2++; cost2+=ntrans;
+                }
             }
         
 
@@ -334,8 +339,14 @@ int main()
                     {
                         sfwd = fwd;
                     }
-                    if (fwd==1) {freq1++; cost1+=ntrans;}
-                    if (fwd==2) {freq2++; cost2+=ntrans;}
+                    if (fwd==1) 
+                    {
+                        freq1++; cost1+=ntrans;
+                    }
+                    if (fwd==2) 
+                    {
+                        freq2++; cost2+=ntrans;
+                    }
                 }
             }
             trans = trans + ntrans;
@@ -353,7 +364,7 @@ int main()
 }
 
 /*
-  this function calculates the mean cost from nodes (including source) to the destination
+ * this function calculates the mean cost from nodes (including source) to the destination
  */
 void cost2D_est(int source, int destination) 
 {
@@ -395,7 +406,7 @@ void cost2D_est(int source, int destination)
 }
 
 /*
- this class is used for getting the rank of boolean matrices
+ * this class is used for getting the rank of boolean matrices
  */
 class BooleanMatrix
 {
@@ -470,7 +481,7 @@ class BooleanMatrix
 };
 
 /*
-  this functions checks if vect is lindearly independent of the cols of matrix
+ * this functions checks if vect is lindearly independent of the cols of matrix
  */
 int linr_indep(bool matrix[npacks][npacks][no_nodes], bool vect[npacks], int f, int cols)
 {
@@ -500,7 +511,7 @@ int linr_indep(bool matrix[npacks][npacks][no_nodes], bool vect[npacks], int f, 
 }
 
 /*
-  this function calculates the mean costs of the links
+ * this function calculates the mean costs of the links
  */
 void mean_link_cost_calc()
 {
@@ -525,4 +536,4 @@ void mean_link_cost_calc()
         }
         fclose(fp);
     }
-} 
+}
