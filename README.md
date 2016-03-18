@@ -1,5 +1,4 @@
 # RoutingUsingRatelessCodes
-Network Routing/Forwarding using Rateless Codes
 
 These are the C++ and MATLAB codes pertaining to our publications:
 
@@ -11,5 +10,3 @@ rateless codes”, 21st IEEE National Conference on Communications (NCC), 2015
 
 [3] S. Indela, S. K. Mishra, S. K. Bose, W-D. Zhong, “Network routing over erasure channels using systematic
 rateless codes”, IEEE Region 10 Conference (TENCON), 2014
-
-For any clarification please contact me.
